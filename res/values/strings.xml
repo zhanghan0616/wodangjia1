@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我当家</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_register_prompt">请检查手机号码是否正确，如果正确但长时间没有收到验证码短信，可能是因为短信运营商的网络不太给力，请点击下面的按钮拨打客服电话。</string>
+    <string name="phone_fast_login">手机号快速登录</string>
+    <string name="title_activity_buy_index">Buy_index</string>
+    <string name="my_income">我的收入</string>
+    <string name="wait_send_goods">待发货</string>
+    <string name="wait_pay">待付款</string>
+    <string name="has_send">已发货</string>
+    <string name="wait_evaluation">待评价</string>
+    <string name="today_amount">今日成交额</string>
+    <string name="today_order">今日订单数</string>
+    <string name="refunding">退款中</string>
+    <string name="stroe_manager">店铺管理</string>
+    <string name="order_manager">订单管理</string>
+    <string name="goods_manager">商品管理</string>
+    <string name="contacts">联系人</string>
+    <string name="message">消息</string>
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="photo">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="school">学校</string>
+    <string name="buyer_credit">买家信誉度</string>
+    <string name="seller_credit">卖家信誉度</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="search_goods_store">搜索商品、店铺</string>
+    <string name="title_activity_shopping_cart">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="userinfo">个人资料</string>
+    <string name="user_login">用户登录</string>
+    <string name="register">注册</string>
+    <string name="clear">清空</string>
+    <string name="title_activity_setting">MainActivity</string>
+    <string name="setting">设置</string>
+    <string name="edit">编辑</string>
+
+</resources>

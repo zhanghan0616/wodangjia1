@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout style="@style/index_sale_relative_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_amount" />
+
+                <TextView
+                    style="@style/index_sale_font_topnum"
+                    android:text="0.0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/eeeeee" />
+
+            <RelativeLayout style="@style/index_sale_relative_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_order" />
+
+                <TextView
+                    style="@style/index_sale_font_topnum"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/eeeeee" />
+
+            <RelativeLayout style="@style/index_sale_relative_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refunding" />
+
+                <TextView
+                    style="@style/index_sale_font_topnum"
+                    android:text="0" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/menu_list_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/menu_option_bg"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/menu_tv_info"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/stroe_manager" />
+
+                <ImageView
+                    android:id="@+id/iv_store_enter"
+                    style="@style/menu_iv_enter"
+                    android:src="@drawable/ic_enter" />
+
+                <View
+                    style="@style/menu_v_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/iv_store_enter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/menu_option_bg"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/menu_tv_info"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/order_manager" />
+
+                <ImageView
+                    android:id="@+id/iv_order_enter"
+                    style="@style/menu_iv_enter"
+                    android:src="@drawable/ic_enter" />
+
+                <View
+                    style="@style/menu_v_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/iv_order_enter" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout style="@style/index_sale_rl_orders" >
+
+                    <ImageView
+                        android:id="@+id/iv_wait"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_sale_wait" >
+                    </ImageView>
+
+                    <TextView
+                        style="@style/index_sale_font_below_img"
+                        android:layout_below="@id/iv_wait"
+                        android:text="@string/wait_send_goods" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/index_sale_rl_orders" >
+
+                    <ImageView
+                        android:id="@+id/iv_nopay"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_sale_nopay" >
+                    </ImageView>
+
+                    <TextView
+                        style="@style/index_sale_font_below_img"
+                        android:layout_below="@id/iv_nopay"
+                        android:text="@string/wait_pay" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/index_sale_rl_orders" >
+
+                    <ImageView
+                        android:id="@+id/iv_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_sale_send" >
+                    </ImageView>
+
+                    <TextView
+                        style="@style/index_sale_font_below_img"
+                        android:layout_below="@id/iv_send"
+                        android:text="@string/has_send" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/index_sale_rl_orders" >
+
+                    <ImageView
+                        android:id="@+id/iv_evaluation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_sale_evaluation" >
+                    </ImageView>
+
+                    <TextView
+                        style="@style/index_sale_font_below_img"
+                        android:layout_below="@id/iv_evaluation"
+                        android:text="@string/wait_evaluation" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <View
+                style="@style/menu_v_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/menu_option_bg"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/menu_tv_info"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/goods_manager" />
+
+                <ImageView
+                    android:id="@+id/iv_goods_enter"
+                    style="@style/menu_iv_enter"
+                    android:src="@drawable/ic_enter" />
+
+                <View
+                    style="@style/menu_v_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/iv_goods_enter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/menu_option_bg"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/menu_tv_info"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/my_income" />
+
+                <ImageView
+                    android:id="@+id/iv_income_enter"
+                    style="@style/menu_iv_enter"
+                    android:src="@drawable/ic_enter" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
